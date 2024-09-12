@@ -34,7 +34,7 @@ const Header = ({isDayMode, setIsDayMode, onSearch, fetchTrendMovies, fetchTrend
           </button>
           <div className="lg:hidden w-full flex justify-center">
             <Link to="/" onClick={handleLinkClick}>
-              <img src="/logo.png" alt="Trend Flicks" className='block'/>
+              <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Trend Flicks" className='block'/>
             </Link>
           </div>
         </div>
@@ -43,7 +43,7 @@ const Header = ({isDayMode, setIsDayMode, onSearch, fetchTrendMovies, fetchTrend
         <div className="hidden lg:flex justify-between items-center w-full">
           <div className="text-xl font-bold">
             <Link to="/" onClick={handleLinkClick}>
-            <img src="/logo.png" alt="Trend Flicks" className='block'/></Link>
+            <img src={`${process.env.PUBLIC_URL}/logo.png`} alt="Trend Flicks" className='block'/></Link>
           </div>
           <div className="flex items-center space-x-4">
             <Link to="/about" className="text-white hover:text-gray-300">About</Link>
