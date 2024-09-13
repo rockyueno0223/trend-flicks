@@ -117,7 +117,7 @@ function App() {
 
   return (
     <div style={{ backgroundColor, color: textColor }} className='App min-h-screen'>
-      <BrowserRouter>
+      <BrowserRouter basename='/trend-flicks/'>
         <Header
           isDayMode={isDayMode}
           setIsDayMode={setIsDayMode}
